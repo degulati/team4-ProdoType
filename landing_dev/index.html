@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html>
-<body>
 
-<h1>The input element</h1>
-<!-- ! TODO: FIX the action -->
-<form action="/action_page.php"> 
+    <head>
+        <link rel="stylesheet" href="style.css"></llink>
+    </head>
 
-<!-- TODO: Details -->
-<div>
-    <label for="username">Username:</label>
-    <input type="text" id="username"  placeholder="Your Username" name="username"><br><br>
-    <label for="pwd">Password:</label>
-    <input type="password" id="pwd" placeholder="Your Password" name="pwd"><br><br>
-</div>
+    <body>
+        <h1 class="app_logo">Pomodoro</h1>
+        <!-- ! TODO: FIX the action -->
+        <form action="/action_page.php"> 
+            <div class="login_box">
+                <input type="text" id="username"  placeholder="Username" name="username" class="username_textbox" size="30"><br><br>
+                <input type="password" id="pwd" placeholder="Password" name="pwd" class="password_textbox" size="30"><br><br>
+                <!-- TODO: Add onclick logic -->
+                <input type="submit" value="Login" class="login_click" onclick=""><br><br>
+            </div>
+        </form>
 
-<div>
-    <!-- TODO: remember me the credentials -->
-    <input type="submit" value="Login">
-</div>
-
-</form>
-
-<!-- TODO:  -->
-<button type="button">
-    <a href="https://www.google.com/">Sign Up</a>
-</button>
-
-</body>
-
+        <div class="signup_container">
+            <button type="button" class="signup_button">
+                <a href="https://www.google.com/">Sign Up</a>
+            </button>
+        </div>
+    </body>
 </html>
 
