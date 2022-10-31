@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+hr {
+    border: 1px solid Gainsboro;
+    margin-bottom: 25px;
+}
+
+input[type=text], input[type=password], textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: none;
+    background: Gainsboro;
+    font-size: 14px;
+}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+    background-color: LightGray;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+div.name {
+    width: 50%;
+    float: left;
+}
+
+div#fname {
+    padding-right: 5px;
+}
+
+button {
+    color: White;
+    padding: 10px 0;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity:1;
+}
+
+button#submit {
+    background-color: ForestGreen;
+}
+
+button#cancel {
+    background-color: FireBrick;
+}

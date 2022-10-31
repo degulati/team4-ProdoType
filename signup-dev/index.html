@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form style="border:1px solid #ccc">
+            <div class="container">
+                <h1>Sign Up</h1><hr>
+
+                <div id="fname"class="name">
+                   <label for="fname"><b>First Name</b></label>
+                   <input type="text" placeholder="Enter First Name" name="fname" required>
+                </div>
+
+                <div class="name">
+                   <label for="lname"><b>Last Name</b></label>
+                   <input type="text" placeholder="Enter Last Name" name="lname" required>
+                </div>
+
+                <label for="bio"><b>Bio</b></label>
+                <textarea name="bio" placeholder="Enter Bio" rows="4" cols="50"></textarea>
+
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                <button type="button" id="submit">Submit</button>
+                <button type="button" id="cancel">Cancel</button>
+            </div>
+        </form>
+    </body>
+</html>
