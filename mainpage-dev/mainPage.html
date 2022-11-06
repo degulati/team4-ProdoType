@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mainPage.css" />
+    <link rel="stylesheet" href="pomodoro.css" />
+    <title>main_page</title>
+    <script type="module" src="mainPage.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-column">
+        <div class="bio">
+          <span> Bio </span>
+        </div>
+        <div class="upcoming-item-list">
+          <spab> Upcoming Items </spab>
+        </div>
+      </div>
+      <div class="right-column">
+        <div class="main-header">
+          <span data-main-tab-target="#main-focus" class="nav active"
+            >Focus</span
+          >
+          <span data-main-tab-target="#main-reminders" class="nav"
+            >Reminders</span
+          >
+          <span data-main-tab-target="#main-feed" class="nav">Feed</span>
+        </div>
+
+        <div class="main-content">
+          <div id="main-focus" class="active" data-main-tab-content>
+            <div class="header">
+              <span data-tab-target="#focus-time" class="nav active"
+                >Focus Time</span
+              >
+              <span data-tab-target="#short-break" class="nav"
+                >Short Break</span
+              >
+              <span data-tab-target="#long-rest" class="nav">Long Rest</span>
+            </div>
+            <div class="content">
+              <div id="focus-time" class="active" data-tab-content>
+                <div class="time">
+                  <span>23:45</span>
+                </div>
+                <div class="start">Start</div>
+              </div>
+              <div id="short-break" data-tab-content>
+                <div class="time">
+                  <span>12:34</span>
+                </div>
+                <div class="start">Stop</div>
+              </div>
+              <div id="long-rest" data-tab-content>
+                <div class="time">
+                  <span>43:21</span>
+                </div>
+                <div class="start">Reset</div>
+              </div>
+            </div>
+          </div>
+          <div id="main-reminders" data-main-tab-content>
+            <span>Reminders</span>
+          </div>
+          <div id="main-feed" data-main-tab-content>
+            <span>Feed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
