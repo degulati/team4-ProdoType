@@ -89,17 +89,68 @@
     color: var(--text-color);
 }
 
+.annotation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 15%;
+    background-color: var(--primary-color-deep);
+    margin-bottom: var(--start-margin-top);
+    border-radius: var(--box-radius);
+}
+
+.annotation .focusing-task-tile span {
+    font-size: var(--internal-title-font-size);
+    width: 80%;
+    height: 100%;
+}
+
+.annotation .pomo-amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 5px;
+}
+
+.annotation .pomo-amount .pomo-icon {
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 10%;
+    flex-grow: 1;
+}
+
+.annotation .pomo-amount span {
+    font-size: var(--internal-title-font-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
 
 .time {
     font-size: var(--time-font-size);
     font-weight: 500;
     width: 85%;
-    height: 70%;
+    height: 60%;
     background-color: var(--primary-color-deep);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: var(--box-radius);
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 
@@ -111,7 +162,7 @@
     background: var(--text-color);
     color: var(--primary-color-deep);
     font-size: var(--internal-title-font-size);
-    margin-top: var(--start-margin-top);
+    margin: var(--start-margin-top);
     padding: var(--start-padding-top-bottom) var(--start-padding-left-right);
     border-radius: calc(var(--box-radius) / 2);
     overflow: hidden;
@@ -119,6 +170,31 @@
 }
 
 .start::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: var(--start-before-height);
+    bottom: 0px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.reset {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: var(--text-color);
+    color: var(--primary-color-deep);
+    font-size: var(--internal-title-font-size);
+    margin: var(--start-margin-top);
+    padding: var(--start-padding-top-bottom) var(--start-padding-left-right);
+    border-radius: calc(var(--box-radius) / 2);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.reset::before {
     content: "";
     position: absolute;
     left: 0;
