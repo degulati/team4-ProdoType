@@ -1,4 +1,4 @@
-import { timer } from "./src/data/db.js";
+import { timer } from "../src/data/db.js";
 console.log(timer)
 
 const ACTIVE = 'active'
