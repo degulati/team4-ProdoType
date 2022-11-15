@@ -10,6 +10,7 @@ const tabContent = document.querySelectorAll('[data-tab-content]')
 const timeShow = document.querySelectorAll('.time')
 //pomodoro's three contents' buttions
 const startBtn = document.querySelectorAll('.start')
+const pomoAmount = document.querySelectorAll
 
 const audios = []
 
